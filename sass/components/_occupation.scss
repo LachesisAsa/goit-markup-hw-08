@@ -1,9 +1,10 @@
 .occupation {
     padding-top: 0;
     display: none;
+
     @media screen and (min-width: $desktop) {
-            display: block;
-        }
+        display: block;
+    }
 }
 
 .occupation__title {
@@ -22,7 +23,7 @@
     flex-wrap: wrap;
 }
 
-.occupation__item{
+.occupation__item {
     &:not(:last-child) {
         margin-right: 30px;
     }

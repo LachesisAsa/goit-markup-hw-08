@@ -83,8 +83,9 @@
 }
 
 .portfolio-projects__links {
+
     &:hover .portfolio-projects__text,
-        &:focus .portfolio-projects__text{
+    &:focus .portfolio-projects__text {
         transform: translateX(0%);
         opacity: 1;
         outline: none;
@@ -95,8 +96,9 @@
     border-top: none;
     border: 1px solid $bg-color-projects;
     padding: 20px 24px;
-   
+
 }
+
 .projects__descr-after {
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         padding-bottom: 56px;
@@ -118,5 +120,3 @@
     font-size: 16px;
     line-height: 1.88;
 }
-
-

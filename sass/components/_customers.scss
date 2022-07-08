@@ -8,7 +8,7 @@
 }
 
 .customers__list {
-@media screen and (min-width: $mobile) and (max-width: 1199px) {
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
         flex-wrap: wrap;
         margin: -15px;
     }
@@ -18,29 +18,29 @@
     }
 }
 
-.customers__item{
-        @media screen and (max-width: 479px) {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 15px;
-            max-width: 210px;
+.customers__item {
+    @media screen and (max-width: 479px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        max-width: 210px;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
         }
-    
-        @media screen and (min-width: $mobile) and (max-width: 1199px) {
-            width: calc((100% - 2 * 30px) / 2);
-            margin: 15px;
-        }
-    
-        @media screen and (min-width: $tablet) and (max-width: 1199px) {
-            width: calc((100% - 3 * 30px) / 3);
-            margin: 15px;
-        }
-    
-        @media screen and (min-width: $desktop) {
-            &:not(:last-child) {
-                    margin-right: 30px;
-                }
-        }
+    }
 }
 
 .customers__links {
@@ -55,9 +55,10 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: $desktop) {
-            width: 170px;
-        }
+        width: 170px;
+    }
 }
 
 .customers__icon {
@@ -65,7 +66,9 @@
 }
 
 .customers__links {
-    &:hover, &:focus{
+
+    &:hover,
+    &:focus {
         border-color: $accent-color;
         color: $accent-color;
         outline: none;

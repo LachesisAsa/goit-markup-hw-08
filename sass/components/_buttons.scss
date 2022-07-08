@@ -1,3 +1,27 @@
+/* drop-menu */
+
+.mobile-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> button-hero >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .button-hero {
@@ -126,7 +150,7 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  
+
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
