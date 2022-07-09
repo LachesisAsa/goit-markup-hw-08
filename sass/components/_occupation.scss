@@ -24,14 +24,13 @@
 }
 
 .occupation__item {
+    position: relative;
+
     &:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.occupation__item {
-    position: relative;
-}
 
 .occupation__text {
     position: absolute;

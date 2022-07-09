@@ -28,17 +28,20 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-projects__links {
 
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
+        outline: none;
+    }
+
+    &:hover .portfolio-projects__text,
+    &:focus .portfolio-projects__text {
+        transform: translateX(0%);
+        opacity: 1;
     }
 }
-
 
 .portfolio-projects__overlay {
     overflow: hidden;
@@ -82,15 +85,6 @@
 
 }
 
-.portfolio-projects__links {
-
-    &:hover .portfolio-projects__text,
-    &:focus .portfolio-projects__text {
-        transform: translateX(0%);
-        opacity: 1;
-        outline: none;
-    }
-}
 
 .projects__descr {
     border-top: none;
