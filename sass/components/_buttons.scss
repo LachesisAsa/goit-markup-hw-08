@@ -65,16 +65,16 @@
   border: none;
   padding: 6px 22px;
 
-  color: $primary-text-color;
-  background: $secondary-bg-color;
-
+  
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-
+  
+  color: $primary-text-color;
+  background: $secondary-bg-color;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,6 +96,9 @@
 
 .backdrop__button-close {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 0px;
   top: 0px;
 
@@ -107,9 +110,6 @@
 
   border-radius: 50%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   background: $primary-bg-color;
   border: 1px solid rgba(0, 0, 0, 0.1);

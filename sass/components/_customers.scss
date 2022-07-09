@@ -45,11 +45,11 @@
 
 .customers__links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 92px;
     border: 1px solid $social-bg-color;
     border-radius: 4px;
-    align-items: center;
-    justify-content: center;
     color: $social-bg-color;
 
     transition-property: color, border-color;

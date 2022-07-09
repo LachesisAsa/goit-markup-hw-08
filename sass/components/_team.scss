@@ -3,11 +3,11 @@
 }
 
 .dream-team__title {
+    text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
@@ -38,8 +38,6 @@
             margin-right: 30px;
         }
     }
-
-
 }
 
 .team-list__item {
@@ -57,10 +55,10 @@
 }
 
 .team-list__title {
-    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
     color: $primary-text-color;
 }
 

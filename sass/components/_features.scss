@@ -36,22 +36,23 @@
     }
 
     @media screen and (min-width: $desktop) {
+        width: 270px;
+
         &:not(:last-child) {
             margin-right: 30px;
         }
 
-        width: 270px;
     }
 }
 
 .features__icon {
     display: flex;
-    margin-bottom: 30px;
-    height: 120px;
-    background-color: $secondary-bg-color;
-    border-radius: 4px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: $secondary-bg-color;
 }
 
 .features__text {
