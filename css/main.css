@@ -368,7 +368,7 @@ body.is-open {
   background: #2196f3;
 }
 
-.menu-nav__link:hover, .menu-nav__link:focus {
+.menu-nav__link:hover, .menu-nav__link:focus, .menu-nav__link.carrent {
   color: #2196f3;
 }
 
